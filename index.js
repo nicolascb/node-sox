@@ -118,6 +118,7 @@ Transcode.prototype.start = function() {
       '--magic',
       '--show-progress',
       self.inputFile,
+      '-b', self.options.sampleBitsSize,
       '-r', self.options.sampleRate,
       '-t', self.options.format,
       '-C', Math.round(self.options.bitRate / 1024) +
